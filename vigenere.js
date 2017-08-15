@@ -84,6 +84,7 @@ function printTable()
 	var t = makeTable();
 	document.getElementById("ascii").innerHTML = "";
 	for (var i = 0; i < t.length; i++) {
-		document.getElementById("ascii").innerHTML = document.getElementById("ascii").innerHTML+"<tr><td>"+intsToCharList(t[i]).join("</td><td>")+"</td></tr>";
+		document.getElementById("ascii").innerHTML = document.getElementById("ascii").innerHTML+
+			"<tr><td>"+intsToCharList(t[i]).join("</td><td>")+"</td></tr>";
 	}
 }
